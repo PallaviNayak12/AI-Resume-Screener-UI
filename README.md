@@ -30,7 +30,7 @@ This project simulates an AI-powered resume evaluation tool where users can uplo
 
 ## Demo Video
 
-[![Watch the demo]](resume-screener-ui-demo.mp4)  
+[![Watch the demo](resume-screener-screenshot.png)](resume-screener-ui-demo.mp4)
  
 
 ---
