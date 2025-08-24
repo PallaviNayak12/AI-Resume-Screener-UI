@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Resume Screener UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Resume Screener</h1>
+
+    <div class="upload-section">
+        <input type="file" id="resumeInput" accept=".pdf" hidden>
+        <button class="upload-btn" id="uploadBtn">Upload Resume (PDF)</button>
+    </div>
+
+    <div id="fileName" class="file-name"></div>
+
+    <div class="results">
+        <div class="card">
+            <h3>AI Score</h3>
+            <div class="score" id="aiScore">--</div>
+            <div class="metric">Based on skills match</div>
+        </div>
+        <div class="card">
+            <h3>Skills Matched</h3>
+            <div class="score" id="skillsMatched">--</div>
+            <div class="metric">Relevant for the role</div>
+        </div>
+        <div class="card">
+            <h3>Experience Level</h3>
+            <div class="score" id="experienceLevel">--</div>
+            <div class="metric">Based on resume details</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const uploadBtn = document.getElementById("uploadBtn");
+    const resumeInput = document.getElementById("resumeInput");
+    const fileNameDisplay = document.getElementById("fileName");
+    const aiScoreEl = document.getElementById("aiScore");
+    const skillsEl = document.getElementById("skillsMatched");
+    const expEl = document.getElementById("experienceLevel");
+
+    uploadBtn.addEventListener("click", () => {
+        resumeInput.click();
+    });
+
+    resumeInput.addEventListener("change", () => {
+        if(resumeInput.files.length > 0){
+            const file = resumeInput.files[0];
+            fileNameDisplay.textContent = `Selected File: ${file.name}`;
+
+            // Simulate AI results dynamically
+            const aiScore = Math.floor(Math.random() * 3) + 8; // 8-10
+            const skills = Math.floor(Math.random() * 21) + 60; // 60%-80%
+            const experience = Math.floor(Math.random() * 4) + 2; // 2-5 years
+
+            aiScoreEl.textContent = `${aiScore}/10`;
+            skillsEl.textContent = `${skills}%`;
+            expEl.textContent = `${experience} Years`;
+        } else {
+            fileNameDisplay.textContent = "";
+            aiScoreEl.textContent = "--";
+            skillsEl.textContent = "--";
+            expEl.textContent = "--";
+        }
+    });
+</script>
+
+</body>
+</html>
