@@ -51,16 +51,5 @@ This project simulates an AI-powered resume evaluation tool where users can uplo
 
 ---
 
-## Deployment
 
-You can host this project easily using **[GitHub Pages](https://pages.github.com/)**:
 
-1. Upload all files to your GitHub repository  
-2. Go to **Settings → Pages → Source → main branch / root**  
-3. Open the generated URL to view the live project
-
----
-
-## Author
-
-**Pallavi Nayak**
