@@ -15,7 +15,7 @@ This project simulates an AI-powered resume evaluation tool where users can uplo
 
 - Sleek, clean, and responsive design  
 - Upload PDF resume (filename displayed)  
-- Dynamic AI Score, Skills Matched, and Experience Level after upload  
+- Dynamic AI Score, Skills Matched, and Experience Level after upload
 - Interactive UI with hover effects for cards  
 - Fully static and easy to deploy
 
