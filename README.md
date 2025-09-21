@@ -7,7 +7,6 @@ This project simulates an AI-powered resume evaluation tool where users can uplo
 - **Skills Matched**
 - **Experience Level**
 
-> Note: This is a **frontend-only simulation**. No backend or real AI processing is involved. It’s designed to showcase a **modern, recruiter-friendly UI**.
 
 ---
 
